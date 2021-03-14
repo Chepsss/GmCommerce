@@ -1,0 +1,272 @@
+
+.btn{
+    background: #5d20f7;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+}
+
+.btn:hover{
+    
+    background: #c6adfa;
+    color: black;
+}
+
+  /*Opzioni search bar*/
+
+  
+  /* Style the search field */
+  form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+    
+  }
+  
+  /* Style the submit button */
+  form.example button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #5d20f7;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+    
+    
+  }
+  
+  form.example button:hover {
+    
+
+    background: #c6adfa;
+  }
+  
+  /* Clear floats */
+  form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  /* gestore logo, search e iscriviti */
+.header{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+
+}
+
+
+.gallery {
+  background: #EEE;
+}
+
+.gallery-cell {
+  width: 66%;
+  height: 200px;
+  margin-right: 10px;
+  background: #8c8;
+  counter-increment: gallery-cell;
+}
+
+/* cell number */
+.gallery-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(gallery-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+.head{
+  background-color: #F7F7F7;
+  opacity: 0.9;
+}
+/* carosello */
+
+.box{
+  width: 65%;
+  margin-left: 17%;
+}
+#colorenav{
+  background-color: blueviolet;
+}
+
+/*.carousel-item {
+  height: 32rem;
+  background:#777;
+ color: white;
+ position: relative;
+}*/
+
+.container{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-bottom:100px;
+
+}
+
+
+/* footer */
+.footer
+{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   display:flex;
+    background-color: #5d20f7;
+    justify-content: space-evenly;
+   
+    position:static;
+    width: 100%;
+}
+
+a
+{
+    text-decoration: blanchedalmond;
+    color: rgb(231, 125, 235);
+}
+
+a:hover
+{
+    text-decoration: none;
+    color: blanchedalmond;
+
+}
+
+
+
+
+
+.block {
+  max-width:fit-content;
+  height:auto;
+  position: absolute;
+  font-family: monospace;
+  background-color: #E5E8FC;
+  border: solid 5px #112382;
+}
+
+.text-top {
+  padding: 0.5em 0 5em .5em;
+}
+
+.text-bottom {
+  padding: 4em 0 1.5em .5em;
+}
+
+.position1 {
+  top: 0px;
+  left: 0;
+}
+
+.position2 {
+  top: 300px;
+  left: 0px;
+}
+
+.position3 {
+  top: 60px;
+  left: 0px;
+}
+
+
+
+.contenitore{
+    display:flex;
+    background-color: #c6adfa;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+}
+
+.griglia {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+
+}
+
+.riga{
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+}
+
+
+.item {
+    display: flex;
+    flex-grow: row;
+    justify-content: center;
+    position: relative;
+}
+.products {
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  vertical-align: top;
+  text-align: center;
+  min-height: 100%;
+
+  /* Equal to height of footer */
+  /* But also accounting for potential margin-bottom of last child */
+  /*margin-bottom: -50px;*/
+    
+}
+.product-card {
+  padding: 2%;
+  flex-grow: 1;
+  flex-basis: 33%;
+
+  display: flex; /* so child elements can use flexbox stuff too! */
+}
+.product-image img {
+  max-width: 100%;
+}
+
+.product-info {
+  margin-top: auto;
+  min-height: 100%;
+
+  /* Equal to height of footer */
+  /* But also accounting for potential margin-bottom of last child */
+  /*margin-bottom: -50px;*/
+}
+
+@media (max-width: 920px) {
+  .product-card {
+    flex: 1 21%;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-filter {
+    flex-direction: column;
+  }
+  .sort {
+    align-self: flex-start;
+  }
+
+}
+#colorenav {
+
+  background-color: #5d20f7;
+
+
+}
+
+
+
