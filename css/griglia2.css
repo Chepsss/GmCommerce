@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  background: beige;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.products {
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  vertical-align: top;
+  text-align: center;
+  min-height: 100%;
+
+  /* Equal to height of footer */
+  /* But also accounting for potential margin-bottom of last child */
+  margin-bottom: -50px;
+    
+}
+.product-card {
+  padding: 2%;
+  flex-grow: 1;
+  flex-basis: 25%;
+
+  display: flex; /* so child elements can use flexbox stuff too! */
+}
+.product-image img {
+  max-width: 100%;
+}
+
+.product-info {
+  margin-top: auto;
+  min-height: 100%;
+
+  /* Equal to height of footer */
+  /* But also accounting for potential margin-bottom of last child */
+  margin-bottom: -50px;
+}
+
+@media (max-width: 920px) {
+  .product-card {
+    flex: 1 21%;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-filter {
+    flex-direction: column;
+  }
+  .sort {
+    align-self: flex-start;
+  }
+}
+
