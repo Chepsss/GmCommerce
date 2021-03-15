@@ -25,12 +25,15 @@
    
     <title>Index</title>
 
+
+
+    
 </head>
 
 <body>
  
 
-    <div>
+    <div class="head">
              <div class="header">
                 <!--logo-->
                 <div class="logo">
@@ -42,23 +45,27 @@
                 <div>
                     <form class="example" action="#">
                     <input type="text" placeholder="Search.." name="search">
-                    <button type="submit"><i class="fa fa-search"></i></button>
+                    <button type="submit" id="ciao"><i class="fa fa-search"></i></button>
                     </form>  
                     </div>
 
                  <!--Accedi/Registrati-->
                 <div>
                 
-                <a href="" class="btn">Accedi/Registrati</a>
+                <a href="html/accedi.html" class="btn">Accedi/Registrati</a>
                 
                 </div>
                 </div>
-
+                <script type="text/javascript">
+                    document.getElementById("ciao").onclick = function(){
+                        alert("Il button è predisposto per l'implementazione del backend");
+                    }
+                    </script>
          <!--Menu- NAVBAR-->
 
     
-     
-        <nav class="navbar navbar-expand-lg navbar " id= "colorenav">
+     <div >
+        <nav class="navbar navbar-expand-lg navbar-dark" id = "colorenav">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">GM COMMERCE</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
@@ -118,6 +125,51 @@
                 </div>
             </div>
         </nav>
+        </div>
+
+
+        <div class="box">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="4000" >
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-interval="4000">
+                    <img src="img/carosello/Kindle.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item" data-interval="4000">
+                    <img src="img/carosello/aspirapolvere.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item" data-interval="4000">
+                    <img src="img/carosello/Galaxy_s10_recensione.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item" data-interval="4000">
+                    <img src="img/carosello/scarpanike.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item" data-interval="4000">
+                    <img src="img/carosello/Adidas-Stycon.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            
+            </div>
+                <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+                 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+                 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+            
+            
       
     </div>
        
@@ -128,6 +180,7 @@
 
 
 <!--PRODUCTS GRID-->
+
 <!--Da qui inizia la griglia--> 
 <section class="products">  
     <div class="product-card">
@@ -231,12 +284,6 @@
       </div>
                                       
   </section>
-
-
-   
-
-
-
 
     <!--FOOTER-->
   
