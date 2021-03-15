@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../mycss/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Scheda</title>
+
+
+    <style>
+        .primo {
+            justify-content: center;
+            background-color: #f7f7f7;
+            display: flex;
+
+
+            margin: 5%;
+        }
+
+        .secondo {
+            width: 60%;
+            background-color: white;
+            display: flex;
+            margin: 3%;
+        }
+
+        .divfoto {
+
+          
+
+
+        }
+
+        .descr {
+            margin-left: 3%;
+            margin-right: 2%;
+            justify-content: space-between;
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            /*padding:1%;*/
+
+
+        }
+
+        .contButt {
+            align-self: flex-end;
+            display: flex;
+            flex-direction: row;
+            padding-left: 10%;
+
+
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <div class="head">
+        <div class="header">
+            <!--logo-->
+            <div class="logo">
+                <a href="../../../index.html"><img src="../../../img/logo.png" width="150px"></a>
+            </div>
+
+
+            <!-- searchbar -->
+            <div>
+                <form class="example" action="#">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit" id="ciao"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+
+            <!--Accedi/Registrati-->
+            <div>
+
+                <a href="html/accedi.html" class="btn">Accedi/Registrati</a>
+
+            </div>
+        </div>
+        <script type="text/javascript">
+            document.getElementById("ciao").onclick = function () {
+                alert("Il button è predisposto per l'implementazione del backend");
+            }
+        </script>
+        <!--Menu- NAVBAR-->
+
+
+        <div>
+            <nav class="navbar navbar-expand-lg navbar " id="colorenav">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="../../../index.html" target="blank">GM COMMERCE</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    ELETTRONICA
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" 
+                                            href="../../elettronica/cellulare/cellulari.html">Smartphone</a></li>
+                                    <li><a class="dropdown-item"  href="#">Console</a></li>
+                                    <li><a class="dropdown-item" 
+                                            href="../../elettronica/elettrodomestici/elettrodomestici.html">elettrodomestici</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="">Informatica</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    ABBIGLIAMENTO
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" target="blank"
+                                            href="../../../html/abbigliamento/abbigliamentosportivo/hockey/hockey.html">Sportivo</a>
+                                    </li>
+                                    <li><a class="dropdown-item"
+                                            href="../../abbigliamento/abbigliamentocasual/pagina_casual.html">Casual</a></li>
+                                    <li><a class="dropdown-item"
+                                            href="../../abbigliamento/accessoriEgioielli/accessori/accessori.html">Accessori</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    LIBRI
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" 
+                                            href="../../libri/letteratura/letteratura.html">Letteratura</a></li>
+                                    <li><a class="dropdown-item"  href="">Ebook</a></li>
+                                    <li><a class="dropdown-item" href="../../libri/arte/arte.html">Arte</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    SVAGO
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="../../svago/intrattenimento/dvdbluray.html">Strumenti
+                                            Musicali</a></li>
+                                                                        <li><a class="dropdown-item" href="../../svago/componentiAudio/componentiAudio.html">componenti Audio</a></li>
+
+                                    <li><a class="dropdown-item"  href="">CD e Vinili</a></li>
+                                    <li><a class="dropdown-item"  href="../../svago/faidate/faidate.html">Fai da
+                                            te</a></li>
+                                    <li><a class="dropdown-item"
+                                            href="../../svago/intrattenimento/dvdbluray.html">Intrattenimento</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!--scheda prodotto-->
+
+    <div class="primo">
+        <div class="secondo">
+            <div class="divfoto">
+                <img
+                    src="../../../img/svago/componentiAudioImg/WP_dLive-S7000-Front_On.jpg">
+
+            </div>
+            <div class="descr">
+                <h3>MIXER ALLEN & HEATH dLIVE S-7000 </h3>
+                <h6><i> Mixer digitali professionali Live</i></h6> </a>
+                
+                <h4<p><i>Mixer oltre 12 canali
+                Allen & Heath DLIVE S7000
+                S7000 è il più potente mixer della famiglia dLive di Allen & Heath, con ben 216 fader assegnabili. È dotato di 36 fader
+                su 6 livelli, doppio touchscreen da 12" e l'innovativa interfaccia utente Harmony per il flusso di lavoro più veloce del
+                settore.
+                
+               </i></p>
+                <p><i>
+                
+                36 fader
+                Layout completamente assegnabile: 216 fader
+                Harmony UI integra avvolgenti controlli dello schermo
+                Doppio touchscreen da 12"
+                Controllo del gesto: pizzica, scorri, trascina e rilascia
+                Visualizzazione EQ multi-mode dedicata
+                Aree di widget configurabili per Scene, metri, FX e altro
+                3 pagine di 6 rotabili assegnabili per schermo
+                26 softkey assegnabili
+                Schede di fader Engineer's Wedge e IEM
+                Visibilità diurna
+                Registrazione e riproduzione stereo USB
+                8 XLR mic / line in, 8 uscite XLR
+                2 digitali st AES3 in, 3 digitali st AES3 out
+                Hub di connessione
+                Collegamento gigabit GigaACE ridondante a MixRack
+                1x collegamento DX ridondante per espansione I / O
+                2 porte I / O - 128 ch 96 kHz ciascuna
+                2x porte di rete
+                Wordclock BNC I/O
+                Uscita video
+                Doppio alimentatore ridondante e sostituibile a caldo
+                3 anni di garanzia</i></p>
+                    </h3>
+                    <h4>29.000,00 €</h4>
+
+
+                <div class="contButt" id="pd">
+                    <a href="" class="btn">Aggiungi al carrello</a>
+                    <a href="" class="btn">Acquista subito</a>
+
+                </div>
+                <script type="text/javascript">
+                    document.getElementById("pd").onclick = function () {
+                        alert("Il button è predisposto per l'implementazione del backend");
+                    }
+                </script>
+
+            </div>
+        </div>
+    </div>
+
+    <!---->
+
+
+    <!--FOOTER-->
+
+
+    <footer class="footer">
+        <div>
+            <ul>
+                <a href="https://www.gm-servizi.it/chi-siamo/" target="blank">
+                    <li>Chi siamo</li>
+                </a>
+                <a href="https://duckduckgo.com/?t=ffab&q=Via+Nuoro%2C+700182+Roma+&ia=web&iaxm=maps" target="blank">
+                    <li>Dove siamo</li>
+                </a>
+                <a href="https://www.gm-servizi.it/contatti-2/" target="blank">
+                    <li>Contatti</li>
+                </a>
+            </ul>
+        </div>
+
+        <div>
+            <ul>
+                <a href="https://www.amazon.it/gp/help/customer/display.html?ie=UTF8&nodeId=201239010&ref_=footer_payment"
+                    target="blank">
+                    <li>Metodi di pagamento</li>
+                </a>
+                <a href="https://www.dhl.com/it-it/home/customer-service.html" target="blank">
+                    <li>Spedizioni</li>
+                </a>
+
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <a href="https://www.worldometers.info/coronavirus/" target="blank">
+                    <li>COVID-19</li>
+                </a>
+                <a href="https://www.gm-servizi.it/informativa-estesa-sulla-privacy/" target="blank">
+                    <li>Privacy</li>
+                </a>
+
+            </ul>
+        </div>
+    </footer>
+
+
+
+
+
+</body>
+
+
+</html>
