@@ -1,3 +1,26 @@
+.immagine1
+{ display: block;}
+.immagine2 
+{display:none;}
+.product-image:hover.immagine1
+{display: none;}
+.product-image:hover.immagine2
+{display:block;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .btn{
     background: #5d20f7;
@@ -27,6 +50,7 @@
     background: #f1f1f1;
     
   }
+.infoimg{ display:none;}1
   
   /* Style the submit button */
   form.example button {
@@ -234,6 +258,7 @@ a:hover
 .product-image img {
   max-width: 100%;
 }
+
 
 .product-info {
   margin-top: auto;
