@@ -20,20 +20,92 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="../../../../mycss/style.css">
+    <link rel="stylesheet" href="../../../mycss/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    
-    <title>Index</title>
+    <title>Scheda</title>
+
+
+    <style>
+        .primo{
+            justify-content: center;
+            background-color: #f7f7f7;
+            display: flex;
+           
+          
+           margin:5%;
+        }
+        .secondo{
+            width: 60%;
+            background-color: white;
+            display: flex;
+            margin:3%;
+        }
+        
+        .divfoto{
+           
+            background-color:white;
+           
+
+        }
+        .descr{
+            margin-left: 3%;
+            margin-right:2%;
+            justify-content: space-between;
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            /*padding:1%;*/
+            
+            
+        }
+        .contButt{
+            align-self: flex-end;
+            display: flex;
+            flex-direction: row;
+            padding-left: 10%;
+            
+            
+
+        }
+        
+       
+             
+    </style>
 
 </head>
 
-<body>  <!--Menu- NAVBAR-->
+<body>  
+  <div class="header">
+    <!--logo-->
+    <div class="logo">
+        <a href="../../../index.html" ><img src="../../../img/logo.png" width="150px"></a>
+    </div> 
+
+
+    <!-- searchbar -->
+    <div>
+        <form class="example" action="#">
+        <input type="text" placeholder="Search.." name="search">
+        <button type="submit"><i class="fa fa-search"></i></button>
+        </form>  
+        </div>
+
+     <!--Accedi/Registrati-->
+    <div>
+    
+    <a href="" class="btn">Accedi/Registrati</a>
+    
+    </div>
+    </div>
+
+<!--Menu- NAVBAR-->
 
     
      
     <nav class="navbar navbar-expand-lg navbar " id= "colorenav">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">GM COMMERCE</a>
+            <a class="navbar-brand" href="../../../index.html">GM COMMERCE</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -93,168 +165,82 @@
     </nav>
   
 </div>
-   
-      <!--PRODUCTS GRID-->
-<!--Da qui inizia la griglia--> 
-<section class="products">  
-    <div class="product-card">
-      <div class="product-image">
-        <img src="../../../../img/abbigliamento/accessoriImg/downoad.jpg">
-      </div>
-      <div class="product-info">
-        <h5>Collana Girocollo Bvlgari</h5>
-        <h6>di Ford Cochran e Alessia Borin</h6>
-        <h4>3435,00€ </h4>
-      </div>
-    </div>
-     
-    <div class="product-card">
-      <div class="product-image">
-        <img src="../../../../img/abbigliamento/accessoriImg/download1.jpg">
-      </div>
-      <div class="product-info">
-        <h5>Collana con Smeraldo in Argento </h5>
-        <h6>Gioiellieria Artigianale</h6>
-        <h4>1231,95€ </h4>
-      </div>
-    </div>
-  
-    <div class="product-card">
-      <div class="product-image">
-        <img src="../../../../img/abbigliamento/accessoriImg/download8.jpg">
-      </div>
-      <div class="product-info">
-        <h5>Anello smaltato con medaglione</h5>
-        <h6>Versace</h6>
-        <h4>195,60€</h4>
-      </div>
-    </div>
-
-    <div class="product-card">
-      <div class="product-image">
-        <img src="../../../../img/abbigliamento/accessoriImg/download3.jpg">
-      </div>
-      <div class="product-info">
-        <h5>PATEK PHILIPPE NAUTILUS 40 MM REF. 5711/1A-010</h5>
-        <h6>Patek Philippe</h6>
-        <h4>$27599.99</h4>
-      </div>
-    </div>
-
-   <div class="product-card">
-      <div class="product-image">
-        <img src="../../../../img/abbigliamento/accessoriImg/download4.jpg">
-    </div>
-      <div class="product-info">
-        <h5>Collana Girocollo Bvlgari</h5>
-        <h6>Bvlgari</h6>
-        <h4>$3664.99</h4>
-      </div>
-    </div>
-
-    <div class="product-card">
-      <div class="product-image">
-        <img src="../../../../img/abbigliamento/accessoriImg/download5.jpg">
-      </div>
-        <div class="product-info">
-          <h5> ROLEX Oyster Perpetual</h5>
-          <h6>Rolex Geneve</h6>
-          <h4>$5099.99</h4>
-        </div>
-    </div>
-
-    <div class="product-card">
-      <div class="product-image">
-        <img src="../../../../img/abbigliamento/accessoriImg/download6.jpg">
-      </div>
-        <div class="product-info">
-          <h5>Orecchini a Cerchio Fendi</h5>
-          <h6>di Fendi</h6>
-          <h4>$279.99</h4>
-        </div>
-    </div>
-
-    <div class="product-card">
-      <div class="product-image">
-        <img src="../../../../img/abbigliamento/accessoriImg/download7.jpg">
-      </div>
-        <div class="product-info">
-          <h5>Cintura regolabile e reversibile Gancini</h5>
-          <h6>Intramontabile icona di eleganza e lusso. <br>
-        </h6>
-          <h4>$399.99</h4>
-        </div>
-      </div>
-                                 
+ <!--scheda prodotto-->
+ <div class="primo">
+    <div class="secondo">
+        <div class="divfoto">
+        <img src="../../../img/abbigliamento/accessoriImg/download2.jpg" >
     
-      <div class="product-card">
-        <div class="product-image">
-          <img src="../../../../img/abbigliamento/accessoriImg/download2.jpg">
+         </div>
+        <div class="descr">
+            <p>Gemelli in oro by Versace<br>
+                Un dettaglio iconico per qualsiasi look formale, questi gemelli in resina presentano una Medusa e un bordo color oro. Tutti i prodotti Versace sono privi di piombo e nichel. Tutti i materiali sono ipoallergenici. 
+            </p>
+        
+            <div class="contButt" id="pd">
+                <a href="" class="btn">Aggiungi al carrello</a>
+                <a href="" class="btn">Acquista subito</a>
+            
+            </div>
+            <script type="text/javascript">
+                document.getElementById("pd").onclick = function(){
+                    alert("Il button è predisposto per l'implementazione del backend");
+                }
+                </script>
+
         </div>
-          <div class="product-info">
-            <h5>Anello Medusa in resina Nero Uomo  </h5>
-            <h6>Bijoux Versace</h6>
-            <h4>$799.99</h4>
-          </div>
-      </div>
-                                      
-  </section>
-Bvlgari Vintage - Selezione Esclusiva
+    </div>
+</div>
 
-   
-  
+<!---->
+     
+<!--FOOTER-->
 
-
-
-    <!--FOOTER-->
-  
 
 <footer class="footer">
-    <div>
-        <ul>
-            <a href="https://www.gm-servizi.it/chi-siamo/">
-                <li>Chi siamo</li>
-            </a>
-            <a href="https://duckduckgo.com/?t=ffab&q=Via+Nuoro%2C+700182+Roma+&ia=web&iaxm=maps">
-                <li>Dove siamo</li>
-            </a>
-            <a href="https://www.gm-servizi.it/contatti-2/">
-                <li>Contatti</li>
-            </a>
-        </ul>
-    </div>
+<div>
+    <ul>
+        <a href="https://www.gm-servizi.it/chi-siamo/" target="blank">
+            <li>Chi siamo</li>
+        </a>
+        <a href="https://duckduckgo.com/?t=ffab&q=Via+Nuoro%2C+700182+Roma+&ia=web&iaxm=maps" target="blank">
+            <li>Dove siamo</li>
+        </a>
+        <a href="https://www.gm-servizi.it/contatti-2/" target="blank">
+            <li>Contatti</li>
+        </a>
+    </ul>
+</div>
 
-    <div>
-        <ul>
-            <a href="https://www.amazon.it/gp/help/customer/display.html?ie=UTF8&nodeId=201239010&ref_=footer_payment">
-                <li>Metodi di pagamento</li>
-            </a>
-            <a href="https://www.dhl.com/it-it/home/customer-service.html">
-                <li>Spedizioni</li>
-            </a>
+<div>
+    <ul>
+        <a href="https://www.amazon.it/gp/help/customer/display.html?ie=UTF8&nodeId=201239010&ref_=footer_payment" target="blank">
+            <li>Metodi di pagamento</li>
+        </a>
+        <a href="https://www.dhl.com/it-it/home/customer-service.html" target="blank">
+            <li>Spedizioni</li>
+        </a>
 
-        </ul>
-    </div>
-    <div>
-        <ul>
-            <a href="https://www.worldometers.info/coronavirus/">
-                <li>COVID-19</li>
-            </a>
-            <a href="https://www.gm-servizi.it/informativa-estesa-sulla-privacy/">
-                <li>Privacy</li>
-            </a>
+    </ul>
+</div>
+<div>
+    <ul>
+        <a href="https://www.worldometers.info/coronavirus/" target="blank">
+            <li>COVID-19</li>
+        </a>
+        <a href="https://www.gm-servizi.it/informativa-estesa-sulla-privacy/" target="blank">
+            <li>Privacy</li>
+        </a>
 
-        </ul>
-    </div>
+    </ul>
+</div>
 </footer>
 
 
 
-    
-    
+
 
 </body>
-
 
 
 </html>
